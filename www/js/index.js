@@ -1,7 +1,7 @@
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
-    
+
     alert("ready!");
 
     function disp(pos) {
@@ -9,10 +9,12 @@ function onDeviceReady() {
         $('.long-view').html(pos.coords.longitude);
     }
 
-    $('#getIt').click(function() {
+    $('#getIt').click(function () {
         navigator.geolocation.getCurrentPosition(disp);
     });
-    
+
 
 
 }
+
+
