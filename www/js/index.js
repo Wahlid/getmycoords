@@ -1,6 +1,8 @@
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
+    
+    alert("ready!");
 
     function disp(pos) {
         $('.lat-view').html(pos.coords.latitude);
