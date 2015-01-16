@@ -4,7 +4,7 @@ var latlon;
 
 function onDeviceReady() {
 
-    alert(latlon);
+
 
 
     function disp(pos) {
@@ -12,7 +12,6 @@ function onDeviceReady() {
         $('.long-view').html(pos.coords.longitude);
         latlon = pos.coords.latitude + "," + pos.coords.longitude;
         alert(latlon);
-        showPosition();
     }
 
     $('#getIt').click(function () {
@@ -25,6 +24,6 @@ function onDeviceReady() {
 function showPosition(position) {
 
     var img_url = "http://maps.googleapis.com/maps/api/staticmap?center=" + latlon + "&zoom=14&size=400x300&sensor=false";
-            document.getElementById("
+    document.getElementById("
     mapholder ").innerHTML = " < img src = '" + img_url + "' > ";
-        }
+}
